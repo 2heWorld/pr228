@@ -1,0 +1,39 @@
+
+body {
+    background-color: rgb(139, 133, 133);
+}
+
+
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    left: 0;
+    animation-name: white-circle;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes white-circle {
+    0% {
+        left: 0;
+    }
+    
+    50% {
+        border-radius: 0%;
+    }
+    
+    100% {
+        left: 1700px;
+    }    
+}
+
+.circle:hover {
+    animation-play-state: paused;
+    background-color: brown;
+}
